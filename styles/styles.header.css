@@ -1,0 +1,107 @@
+.header{
+    width: 100%;
+    flex: 1;
+    min-height: 90px;
+    background: var(--tetiary-color);
+    background-image: linear-gradient(to left,aqua,darkcyan,blue,indigo,purple,cyan);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+    color: var(--color-light);
+}
+.banner{
+    width:100%;
+    padding: 5px 1rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    /* background: url(https://cdn.pixabay.com/photo/2018/12/17/15/18/sky-3880590_1280.jpg) no-repeat center/cover;
+    mix-blend-mode:overlay; */
+}
+.banner div{
+    background-color: var(--secondary-color);
+}
+.banner .logo1{
+    width: 35px;
+    aspect-ratio: 1;
+    border:1px solid;
+    border-radius: 50%;
+    background: url(../images/logo.webp) no-repeat center/cover;
+}
+.banner .company-name{
+    text-transform: uppercase;
+}
+.banner .profile{
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+    user-select: none;
+}
+#toggle-btn{
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+#toggle-btn:hover{
+    color:var(--tetiary-color);
+}
+.ribbon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    background-image: linear-gradient(70deg,var(--secondary-color) 66.666%,var(--tetiary-color) -33.333%);
+}
+.ribbon .search-area,.ribbon .top-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ribbon .search-area{
+    flex: 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    margin-left: 4vw;
+}
+.ribbon .search-area input{
+    min-width: 250px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    padding: 5px;
+    border:none;
+    text-align: center;
+}
+.ribbon .search-area input:focus{
+    outline: none;
+}
+.ribbon .search-area #search-btn{
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.ribbon .search-area #search-btn:hover{
+    border:1px solid;
+}
+.ribbon .top-nav{
+    flex: 1;
+}
+.ribbon .top-nav button{
+    min-width: 4rem;
+    color: var(--color-light);
+    border: none;
+    border-left: 1px solid var(--color-light);
+    padding:0 5px;
+    background: none;
+    display: flex;
+    text-align: center;
+    font-size: var(--h3);
+}
+.ribbon .top-nav button:hover{
+    background: var(--secondary-color);
+}
+#menu-btn{
+    display: none;
+}

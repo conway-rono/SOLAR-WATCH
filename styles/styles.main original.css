@@ -1,0 +1,50 @@
+/* imported local stylesheets obviously */
+@import url(./styles.header.css);
+@import url(./style.body.css);
+@import url(./styles.page.css);
+@import url(./styles.feedCont.css);
+@import url(./styles.scrolls.css);
+@import url(./styles.mediaQ.css);
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    color:var(--font-color);
+}
+
+:root{
+    --h2: 18px;
+    --h3: 13px;
+    --color-light: white;
+    --color-dark: black;
+}
+
+body{
+    --primary-color:whitesmoke;
+    --secondary-color:orange;
+    --tetiary-color:orangered;
+    --font-color:rgb(40, 37, 37);
+    --font-size:16px;
+
+    transition:background-color 200ms ease;/*this is experimental*/
+    background-color: var(--primary-color);
+}
+body.dark_mode{
+    --primary-color:rgb(4, 33, 37);
+    --secondary-color:orangered;
+    --tetiary-color:orange;
+    --font-color:rgb(237, 234, 234);
+
+    background-color: var(--primary-color);
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid red; */
+    overflow: hidden;
+}

@@ -1,0 +1,77 @@
+.page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.page h2,.page .image-pad,.page .note-pad{
+    /* border:2px dashed; */
+    margin: 5px 1rem;
+}
+.page h2{
+    width: 100%;
+    text-align: left;
+}
+.page .image-pad{
+    width: 80%;
+    max-width: 500px;
+    min-width: 400x;
+    aspect-ratio: 16/9;
+    min-height: 250px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    background-color:var(--secondary-color);
+    background: url(../images/moon.jpg) no-repeat center/cover;
+    overflow: hidden;
+}
+.page .image-pad .mask{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.698));
+    position: relative;
+}
+.page .image-pad .mask .description{
+    position: absolute;
+    bottom: 5px;
+    left: 1rem;
+    color: var(--color-light);
+}
+
+.book .engagement{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    background-color: var(--primary-color);
+    border-top: 1px solid grey;
+    position: sticky;
+    bottom:-2px;
+}
+.book .engagement div{
+    width:100%;
+}
+.book .engagement .comments{
+    overflow: hidden;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    transition: all 200ms ease;
+}
+.book .engagement .comments.open{
+    height: 40vh;
+    overflow-y: scroll;
+}
+.book .engagement .comments.open .comment{
+    width: 90%;
+    border: 1px solid grey;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.book .engagement .like-bar{
+    padding: 5px 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}

@@ -1,0 +1,26 @@
+/* ---------#############----------- */
+@media only screen and (max-width:650px){
+    .main{
+        flex-direction: column;
+    }
+    .feed .container .feed-image .image{
+        max-height: 15vh;
+    }
+    .header{
+        flex:0.7;
+    }
+    .ribbon .top-nav{
+        display: none;
+    }
+    #menu-btn{
+        display: block;
+        margin: 0 1rem;
+    }
+    /* .top-nav{
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+    } */
+}

@@ -8,6 +8,8 @@
 .page h2,.page .image-pad,.page .note-pad{
     /* border:2px dashed; */
     margin: 5px 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
 .page h2{
     width: 100%;

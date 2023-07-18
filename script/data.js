@@ -101,7 +101,7 @@ function postRender(num){
     
     var element='<h5><u>Comments</u></h5>';
     allPosts[num].comments.forEach((x)=>{
-        element+=`<div class="comment"><h3>${x.by}</h3><p>${x.says}</p></div>`;
+        element+=`<div class="comment"><h3>${x.by}</h3><p>${x.says}</p><span class="material-icons-outlined" style="margin-left:80%;">thumb_up</span></div>`;
     })
     document.querySelector('.comments').innerHTML=element;
 }
@@ -114,4 +114,3 @@ document.querySelectorAll('.cards').forEach((e,index)=>{
         localStorage.setItem("SW_endFrame",JSON.stringify(index));
     }
 })
-

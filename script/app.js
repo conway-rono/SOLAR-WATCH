@@ -20,12 +20,15 @@ toggleBtn.onclick=()=>{
     }
     themeChange();
 }
-
+function commentsBtnState(){
+    document.querySelector("#comments-btn").textContent=document.querySelector("#comments-btn").innerText==="comment"?"close":"comment";
+}
 document.querySelector("#comments-btn").addEventListener("click",()=>{
     document.querySelector(".comments").classList.toggle('open');
-    document.querySelector("#comments-btn").textContent=document.querySelector("#comments-btn").innerText==="comment"?"close":"comment";
+    commentsBtnState();
 })
 
 document.querySelector(".feed").onclick=()=>{
     document.querySelector(".comments").classList.remove('open');
+    commentsBtnState();
 }

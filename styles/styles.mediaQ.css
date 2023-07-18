@@ -3,6 +3,16 @@
     .main{
         flex-direction: column;
     }
+    .main .book{
+        flex: 1;
+    }
+    .main .feed{
+        border: none;
+    }
+    /* .main .feed .recommended{
+        background-color: var(--primary-color);
+        color: var(--text-color);
+    } */
     .feed .container .feed-image .image{
         max-height: 15vh;
     }

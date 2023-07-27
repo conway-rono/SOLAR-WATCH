@@ -1,10 +1,10 @@
-#SOLAR WATCH
+# SOLAR WATCH
 
-+A blog site for all crazy shannanigans our beloved planets get to ocasionally
++ A blog site for all crazy shannanigans our beloved planets get to ocasionally
 
-*##Objectives
+## Objectives
 
--to create a fully functional blog site with the following features:
+- to create a fully functional blog site with the following features:
 
  1 accessible
  
@@ -16,6 +16,6 @@
  
  5 engagement tracking
 
--to create said features with vanilla frontend languages
+- to create said features with vanilla frontend languages
 
--to find hosting and alsoo make a simple json server backend 
+- to find hosting and alsoo make a simple json server backend
